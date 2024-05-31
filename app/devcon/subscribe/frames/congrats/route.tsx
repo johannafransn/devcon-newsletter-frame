@@ -3,8 +3,6 @@ import { frames } from "../frames";
 import { Button } from "frames.js/next";
 
 export const POST = frames(async (ctx) => {
-  console.log(ctx, "what is ctx?");
-
   if (!ctx.message?.inputText || !ctx.message) {
     throw new Error("Could not find CTX data or inputtext");
   }
